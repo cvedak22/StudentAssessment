@@ -1,0 +1,48 @@
+<div class="template animated slideInRight">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2>List of Students</h2>
+            <ol class="breadcrumb">
+                <li><a ui-sref="home.dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                <li class="active"><i class="fa fa-table"></i> {{vm.title}}</li>
+            </ol>
+        </div>
+    </div><!-- /.row -->
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <table class="table footable table-bordered table-hover table-striped toggle-arrow-tiny" data-page-size="20" data-limit-navigation="20" ep-foo-table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>University</th>
+                        <th>Country</th>
+                        <th data-hide="phone">Sex</th>
+                        <th data-hide="phone" data-type="number">Age</th>
+                        <th data-hide="phone">Start Date</th>
+                        <th data-hide="phone">Degree</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="student in vm.students">
+                        <td>{{::student.name}}</td>
+                        <td>{{::student.university}}</td>
+                        <td>{{::student.country}}</td>
+                        <td>{{::student.sex}}</td>
+                        <td>{{::student.age}}</td>
+                        <td>{{::student.startDate | date: 'yyyy-MM-dd' }}</td>
+                        <td>{{::student.degree }}</td>
+                    </tr>
+                </tbody>
+                <tfoot class="hide-if-no-paging">
+                    <td colspan="7">
+                        <ul class="pagination pull-right"></ul>
+                    </td>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Close the Splash screen -->
+<script src="content/js/loading-bars.js"></script>

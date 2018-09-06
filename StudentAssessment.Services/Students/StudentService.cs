@@ -24,7 +24,7 @@ namespace StudentAssessment.Services.Students
             // execute the stored procedure called GetStudents
             return await _repo.WithConnection(async c =>
             {
-                // map the result from stored procedure to Employee data model
+                // map the result from stored procedure to student data model
                 var results = await c.QueryAsync<Student>("GetStudents", commandType: CommandType.StoredProcedure);
                 return results;
             });

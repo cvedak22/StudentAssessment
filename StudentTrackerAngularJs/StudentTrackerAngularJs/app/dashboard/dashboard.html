@@ -1,0 +1,87 @@
+<div class="template animated slideInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>{{vm.title}} <small>Statistical Overview</small></h1>
+            <ol class="breadcrumb">
+                <li class="active"><i class="fa fa-dashboard"></i> {{vm.title}}</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-lg-4">
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <i class="fa fa-briefcase fa-5x"></i>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                            <p class="announcement-heading">{{vm.universities}}</p>
+                            <p class="announcement-text">Total Universities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4">
+            <div class="panel panel-danger">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <i class="fa fa-university fa-5x"></i>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                            <p class="announcement-heading">{{vm.countries}}</p>
+                            <p class="announcement-text">Total Countries</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <i class="fa fa-users fa-5x"></i>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                            <p class="announcement-heading">{{vm.students}}</p>
+                            <p class="announcement-text">Total Students</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.row -->
+
+    <div class="row">
+
+        <div class="col-lg-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Yearly Statistics</h3>
+                </div>
+                <div class="panel-body">
+                    <nvd3 options="vm.lineChartOptions" data="vm.lineChartData"></nvd3>
+                </div>
+            </div>
+        </div>
+        <!-- End Bar chart of Yearly Statistics Area -->
+
+        <div class="col-lg-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i>Demographics</h3>
+                </div>
+                <div class="panel-body">
+                    <nvd3 options="vm.pieChartOptions" data="vm.pieChartData"></nvd3>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.row -->
+</div>
+
+<script src="content/js/loading-bars.js"></script>

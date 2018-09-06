@@ -10,7 +10,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentAssessment.Api", "St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentAssessment.Services", "StudentAssessment.Services\StudentAssessment.Services.csproj", "{708169EE-5387-44D6-9277-DA8D65C19E9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentAssessment.WebApp", "StudentAssessment.WebApp\StudentAssessment.WebApp.csproj", "{2DF88928-BA7B-4C7B-A859-01178F8C769D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentAssessmentAngularJs", "StudentTrackerAngularJs\StudentTrackerAngularJs\StudentAssessmentAngularJs.csproj", "{34B56710-971C-4307-B216-2F6C6383E24A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,10 +26,10 @@ Global
 		{708169EE-5387-44D6-9277-DA8D65C19E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{708169EE-5387-44D6-9277-DA8D65C19E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{708169EE-5387-44D6-9277-DA8D65C19E9C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2DF88928-BA7B-4C7B-A859-01178F8C769D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2DF88928-BA7B-4C7B-A859-01178F8C769D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2DF88928-BA7B-4C7B-A859-01178F8C769D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2DF88928-BA7B-4C7B-A859-01178F8C769D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34B56710-971C-4307-B216-2F6C6383E24A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34B56710-971C-4307-B216-2F6C6383E24A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34B56710-971C-4307-B216-2F6C6383E24A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34B56710-971C-4307-B216-2F6C6383E24A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

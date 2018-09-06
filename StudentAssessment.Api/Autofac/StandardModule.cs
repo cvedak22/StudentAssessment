@@ -13,26 +13,25 @@ namespace StudentAssessment.Api.Autofac
         {
             base.Load(builder);
 
-            // obtain database connection string once and reuse by Connection class
+            
             var conn = ConfigurationManager.ConnectionStrings["DBConnection"];
 
-            // Register Connection class and expose IConnection 
-            // by passing in the Database connection information
-            builder.RegisterType<Connection>() // concrete type
-                .As<IConnection>() // abstraction
+            
+            builder.RegisterType<Connection>() 
+                .As<IConnection>() 
                 .WithParameter("settings", conn)
                 .InstancePerLifetimeScope();
 
-            // Register Repository class and expose IRepository
+            
             builder.RegisterType<Repository>()
                 .As<IRepository>()
                 .InstancePerLifetimeScope();
-            // Register DashboardService class and expose IDashboardService
+           
             builder.RegisterType<DashboardService>()
                 .As<IDashboardService>()
                 .InstancePerLifetimeScope();
 
-            // Register EmployeeService class and expose IEmployeeService
+            
             builder.RegisterType<StudentService>()
                 .As<IStudentService>()
                 .InstancePerLifetimeScope();
