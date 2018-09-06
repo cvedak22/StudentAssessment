@@ -103,8 +103,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="api\dashboard.json" />
-    <Content Include="api\students.json" />
     <Content Include="content\js\angular-footable.min.js.map" />
     <None Include="packages.config" />
     <Content Include="Scripts\angular.min.js.map" />
