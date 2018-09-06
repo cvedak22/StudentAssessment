@@ -12,11 +12,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentAssessment.Services"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentAssessmentAngularJs", "StudentTrackerAngularJs\StudentTrackerAngularJs\StudentAssessmentAngularJs.csproj", "{34B56710-971C-4307-B216-2F6C6383E24A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{F92A3005-0ED7-4948-82CD-BA0D80800DEA}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Desktop\StudentAssessment db.sql = ..\..\..\Desktop\StudentAssessment db.sql
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
